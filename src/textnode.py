@@ -13,7 +13,7 @@ class TextNode:
     def __init__(self, text: str, TextType: TextType, url: str = None):
         self.text = text
         self.text_type = TextType
-        self.url = None
+        self.url = url
     
     def __eq__(self, value):
         return self.text == value.text and self.text_type.value == value.text_type.value and self.url == value.url
